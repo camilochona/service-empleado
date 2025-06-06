@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.parameta.empleado.controller.EmpleadoControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.316 s <<< FAILURE! - in com.parameta.empleado.controller.EmpleadoControllerTest
+testEmpleadoMenorDeEdad  Time elapsed: 0.011 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: El empleado debe ser mayor de edad.
+	at com.parameta.empleado.controller.EmpleadoControllerTest.testEmpleadoMenorDeEdad(EmpleadoControllerTest.java:52)
+Caused by: java.lang.IllegalArgumentException: El empleado debe ser mayor de edad.
+	at com.parameta.empleado.controller.EmpleadoControllerTest.testEmpleadoMenorDeEdad(EmpleadoControllerTest.java:52)
+
