@@ -1,6 +1,5 @@
 # 🧩 Proyecto de Evaluación Técnica - Parameta S.A.S
-Este proyecto consiste en una solucion **Java con Spring Boot** que expone un servicio REST para recibir y validar los
-datos de un empleado. Una vez validados, el sistema calcula su edad y tiempo de vinculacin, y finalmente envia los
+- Este proyecto consiste en una solucion **Java con Spring Boot** que expone un servicio REST para recibir y validar los datos de un empleado. Una vez validados, el sistema calcula su edad y tiempo de vinculacin, y finalmente envia los
 datos a un **servicio SOAP** que los persiste en una base de datos **MySQL**.
 ---
 ## 📐 Arquitectura del Proyecto
