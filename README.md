@@ -60,7 +60,8 @@ src/
 │ └── controller/ → Pruebas unitarias del controller
 ---
 ## 🚀 Endpoint de Prueba
-GET http://localhost:8081/api/empleado
+- POST http://localhost:8081/api/empleado
+- Json:
     {
         "nombres": "camilo",
         "apellidos": "chona",
@@ -71,7 +72,7 @@ GET http://localhost:8081/api/empleado
         "cargo": "Desarrollador",
         "salario": 8.000000
     }
---
+---
 ## ✅ Pruebas Realizadas
 Las pruebas estan implementadas con **JUnit 5**, **Mockito** y **Spring Test** mediante `@WebMvcTest`, cubriendo:
 - Casos exitosos de registro.
