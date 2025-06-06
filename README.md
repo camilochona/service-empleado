@@ -4,7 +4,7 @@ datos de un empleado. Una vez validados, el sistema calcula su edad y tiempo de 
 datos a un **servicio SOAP** que los persiste en una base de datos **MySQL**.
 ---
 ## 📐 Arquitectura del Proyecto
-El proyecto est basado en una arquitectura en capas siguiendo el patrn MVC:
+El proyecto esta basado en una arquitectura en capas siguiendo el patrn MVC:
 - **Controlador (Controller)**: Maneja las solicitudes REST (`EmpleadoController`).
 - **Entidad (Entity)**: Representa el modelo de datos (`Empleado`).
 - **Servicio SOAP (Service)**: Define e implementa la logica de persistencia a traves de un cliente SOAP
@@ -13,7 +13,7 @@ El proyecto est basado en una arquitectura en capas siguiendo el patrn MVC:
 - **Configuracin SOAP**: `SoapWebServiceConfig` permite integrar el WSDL generado.
 ---
 ## 🔧 Funcionalidad Principal
-1. El usuario enva los datos de un empleado va `POST` al endpoint REST `/api/empleado`.
+1. El usuario envia los datos de un empleado va `POST` al endpoint REST `/api/empleado`.
 2. Se realizan validaciones:
  - Todos los campos deben estar presentes.
  - El empleado debe tener al menos 18 años.
