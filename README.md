@@ -46,18 +46,18 @@ El proyecto esta basado en una arquitectura en capas siguiendo el patrn MVC:
 - Maven
 ---
 ## 📂 Estructura del Proyecto
-src/
-├── main/
-│ ├── java/
-│ │ └── com.parameta.empleado/
-│ │ ├── controller/ → Controlador REST
-│ │ ├── entity/ → Clase Empleado
-│ │ ├── soap/ → Cliente SOAP y lógica de negocio
-│ │ ├── config/ → Configuración de servicios
-│ │ └── exception/ → Manejador global de excepciones
-├── test/
-│ └── java/com.parameta.empleado/
-│ └── controller/ → Pruebas unitarias del controller
+- src/
+- ├── main/
+- │ ├── java/
+- │ │ └── com.parameta.empleado/
+- │ │ ├── controller/ → Controlador REST
+- │ │ ├── entity/ → Clase Empleado
+- │ │ ├── soap/ → Cliente SOAP y lógica de negocio
+- │ │ ├── config/ → Configuración de servicios
+- │ │ └── exception/ → Manejador global de excepciones
+- ├── test/
+- │ └── java/com.parameta.empleado/
+- │ └── controller/ → Pruebas unitarias del controller
 ---
 ## 🚀 Endpoint de Prueba
 - POST http://localhost:8081/api/empleado
@@ -80,7 +80,7 @@ Las pruebas estan implementadas con **JUnit 5**, **Mockito** y **Spring Test** m
 - Verificacion de que los campos calculados (`edadFormateada`, `tiempoVinculacionFormateado`) esten presentes.
 ---
 ## 🧠 Autor
-Desarrollado por **Camilo Chona** como parte del proceso tcnico para **Parameta S.A.S**
+- Desarrollado por **Camilo Chona** como parte del proceso tcnico para **Parameta S.A.S**
 ---
 ## 📌 Notas Adicionales
 - El proyecto corre en `localhost:8081`
