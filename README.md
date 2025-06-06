@@ -1,27 +1,27 @@
 # 🧩 Proyecto de Evaluación Técnica - Parameta S.A.S
-Este proyecto consiste en una solucin **Java con Spring Boot** que expone un servicio REST para recibir y validar los
-datos de un empleado. Una vez validados, el sistema calcula su edad y tiempo de vinculacin, y finalmente enva los
+Este proyecto consiste en una solucion **Java con Spring Boot** que expone un servicio REST para recibir y validar los
+datos de un empleado. Una vez validados, el sistema calcula su edad y tiempo de vinculacin, y finalmente envia los
 datos a un **servicio SOAP** que los persiste en una base de datos **MySQL**.
 ---
 ## 📐 Arquitectura del Proyecto
 El proyecto est basado en una arquitectura en capas siguiendo el patrn MVC:
 - **Controlador (Controller)**: Maneja las solicitudes REST (`EmpleadoController`).
 - **Entidad (Entity)**: Representa el modelo de datos (`Empleado`).
-- **Servicio SOAP (Service)**: Define e implementa la lgica de persistencia a travs de un cliente SOAP
+- **Servicio SOAP (Service)**: Define e implementa la logica de persistencia a traves de un cliente SOAP
 (`EmpleadoService`, `EmpleadoServiceImpl`).
-- **Manejo de excepciones globales**: Captura errores de validacin y de negocio con `GlobalExceptionHandler`.
+- **Manejo de excepciones globales**: Captura errores de validacion y de negocio con `GlobalExceptionHandler`.
 - **Configuracin SOAP**: `SoapWebServiceConfig` permite integrar el WSDL generado.
 ---
 ## 🔧 Funcionalidad Principal
-1. El usuario enva los datos de un empleado va `GET` o `POST` al endpoint REST `/api/empleado`.
+1. El usuario enva los datos de un empleado va `POST` al endpoint REST `/api/empleado`.
 2. Se realizan validaciones:
  - Todos los campos deben estar presentes.
- - El empleado debe tener al menos 18 aos.
+ - El empleado debe tener al menos 18 años.
  - La fecha de vinculacin no puede ser anterior a la fecha de nacimiento.
  - El salario debe ser positivo.
 3. Si las validaciones son correctas:
  - Se calcula la edad actual del empleado.
- - Se calcula el tiempo de vinculacin.
+ - Se calcula el tiempo de vinculacion.
 4. Se invoca el servicio SOAP para almacenar el objeto `Empleado` en la base de datos.
 5. Se devuelve el empleado como JSON, incluyendo los campos calculados.
 ---
@@ -73,10 +73,10 @@ GET http://localhost:8081/api/empleado
     }
 --
 ## ✅ Pruebas Realizadas
-Las pruebas estn implementadas con **JUnit 5**, **Mockito** y **Spring Test** mediante `@WebMvcTest`, cubriendo:
+Las pruebas estan implementadas con **JUnit 5**, **Mockito** y **Spring Test** mediante `@WebMvcTest`, cubriendo:
 - Casos exitosos de registro.
-- Validaciones negativas: menor de edad, salario negativo, fechas inconsistentes, campos vacos.
-- Verificacin de que los campos calculados (`edadFormateada`, `tiempoVinculacionFormateado`) estn presentes.
+- Validaciones negativas: menor de edad, salario negativo, fechas inconsistentes, campos vacios.
+- Verificacion de que los campos calculados (`edadFormateada`, `tiempoVinculacionFormateado`) esten presentes.
 ---
 ## 🧠 Autor
 Desarrollado por **Camilo Chona** como parte del proceso tcnico para **Parameta S.A.S**
