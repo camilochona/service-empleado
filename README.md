@@ -3,7 +3,7 @@
 datos a un **servicio SOAP** que los persiste en una base de datos **MySQL**.
 ---
 ## 📐 Arquitectura del Proyecto
-El proyecto esta basado en una arquitectura en capas siguiendo el patrn MVC:
+El proyecto esta basado en una arquitectura en capas siguiendo el patron MVC:
 - **Controlador (Controller)**: Maneja las solicitudes REST (`EmpleadoController`).
 - **Entidad (Entity)**: Representa el modelo de datos (`Empleado`).
 - **Servicio SOAP (Service)**: Define e implementa la logica de persistencia a traves de un cliente SOAP
@@ -16,7 +16,7 @@ El proyecto esta basado en una arquitectura en capas siguiendo el patrn MVC:
 2. Se realizan validaciones:
  - Todos los campos deben estar presentes.
  - El empleado debe tener al menos 18 años.
- - La fecha de vinculacin no puede ser anterior a la fecha de nacimiento.
+ - La fecha de vinculacion no puede ser anterior a la fecha de nacimiento.
  - El salario debe ser positivo.
 3. Si las validaciones son correctas:
  - Se calcula la edad actual del empleado.
@@ -79,7 +79,7 @@ Las pruebas estan implementadas con **JUnit 5**, **Mockito** y **Spring Test** m
 - Verificacion de que los campos calculados (`edadFormateada`, `tiempoVinculacionFormateado`) esten presentes.
 ---
 ## 🧠 Autor
-- Desarrollado por **Camilo Chona** como parte del proceso tcnico para **Parameta S.A.S**
+- Desarrollado por **Camilo Chona** como parte del proceso tecnico para **Parameta S.A.S**
 ---
 ## 📌 Notas Adicionales
 - El proyecto corre en `localhost:8081`
